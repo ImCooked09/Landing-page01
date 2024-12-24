@@ -1,0 +1,340 @@
+@font-face {
+    font-family: pro;
+    src: url(assests/BasisGrotesqueArabicPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: gilroy-l;
+    src: url(assests/Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: gilroy-b;
+    src: url(assests/Gilroy-ExtraBold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: pro;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    /* crucial part we have to give it width so that nav dont float on left side */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 40px;
+
+}
+
+nav h3 {
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 1vh;
+}
+
+
+
+.intro {
+    height: 45%;
+    width: 100%;
+    background-color: beige;
+    padding: 30px;
+}
+
+.intro h1 {
+    font-family: pro;
+    font-size: 14vh;
+    line-height: 76px;
+    letter-spacing: -3px;
+}
+
+.intro h1 span{
+    color: #933649;
+}
+
+.place {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.place h3,
+.place h4 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.place h4 i {
+    margin-right: 12px;
+}
+
+.hero-img {
+    height: 85%;
+    width: 100%;
+    background-image: url(assests/pop-culture-architecture.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.about h2 {
+    font-size: 58px;
+    width: 60%;
+    height: 100%;
+    line-height: 50px;
+}
+.about h2 span{
+    color: #91603F;
+}
+.about-part2 {
+    width: 35%;
+    height: 100%;
+    border-left: 2px solid black;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-part2 h3 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.icons i {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 50px;
+    margin-right: .5vw;
+}
+
+.work {
+    height: 75%;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    padding: 40px;
+}
+
+.work1 {
+    width: 30%;
+    height: 100%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+.work1 h3 {
+    font-size: 23px;
+
+}
+
+.work i {
+    font-size: 23px;
+}
+
+.work2 {
+    width: 70%;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.work2-elem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+}
+
+.work2-elem:nth-child(1) {
+
+    border-bottom: 2px solid black;
+}
+
+.work2-elem .elem {
+    width: 50%;
+    height: 100%;
+
+}
+
+.work2-elem .elem:nth-child(1) {
+    border-right: 2px solid black;
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+
+.work2-elem .elem:nth-child(2) {
+    padding-left: 60px;
+    margin-bottom: 20px;
+}
+
+.work2-elem .elem h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    font-family: gilroy-b;
+}
+.work2-elem .elem h3 span{
+    color: #783640;
+}
+.work2-elem .elem p {
+    font-family: gilroy-l;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer {
+    background: url('assests/white-linear-angled-architecture.jpg') no-repeat bottom;
+    background-size: cover;
+    padding: 40px 0; 
+    text-align: center;
+    position: relative;
+    color: white;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
+}
+.footer p {
+    margin: 0;
+    font-size: 18px;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+.social-icons a:hover {
+    color: #ddd;
+}
+
+
+@media (max-width: 900px) {
+    nav{
+        padding: 8px 55px;
+    }
+    nav h3 {
+        color: white;
+        background-color: black;
+        padding: 6px 15px;
+        border-radius: 50px;
+        margin-left: 1vh;
+        font-size: 13px;
+    }
+    .intro {
+        height: 22%;
+        width: 100%;
+        background-color: beige;
+        padding: 35px;
+    }
+    
+    .intro h1 {
+        font-family: pro;
+        font-size: 2em;
+        line-height: 37px;
+        letter-spacing: -3px;
+    }
+    .place h3, .place h4 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .about {
+        height: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: center;
+        padding: 6px;
+    }
+    .about h2 {
+        font-size: 30px;
+        width: 97%;
+        height: 100%;
+        line-height: 30px;
+    }
+    .about-part2 {
+        width: 100%;
+        height: 10%;
+        border-left: 2px solid black;
+        padding: 0px 19px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .work {
+        margin-top: 45px;
+        height: 100%;
+        width: 100%;
+        border-top: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        padding: 18px;
+    }
+    .work1 {
+        width: 100%;
+        height: 100%;
+        /* border-right: 2px solid black; */
+        display: flex;
+        justify-content: space-between;
+        padding-right: 40px;
+    }
+    .work2 {
+        width: 100%;
+        height: 100%;
+        padding: 0px 0px;
+    }
+
+    .work2-elem .elem:nth-child(2) {
+        padding-left: 43px;
+        margin-bottom: 0px;
+    }
+    .footer-content {
+        padding: 0 10px;
+    }
+    .footer p {
+        font-size: 16px;
+    }
+    .social-icons a {
+        font-size: 20px;
+    }
+}
